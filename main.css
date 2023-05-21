@@ -1,0 +1,21 @@
+body {
+ background-color: #111;
+ color: white;
+ text-align: center;
+ font-family: sans-serif;
+}
+
+a {
+    color: #03b8ff
+}
+
+p {
+    font-size: 22px;
+}
+
+.red {
+    color: rgb(211, 56, 56);
+}
+.green {
+    color: rgb(28, 199, 99);
+}
