@@ -10,6 +10,22 @@ function check() {
                 output.innerText = "This link is a .zip domain";
                 output.classList.add("red");
                 output.classList.remove("green");
+            } else if (domain.endsWith(".mov")) {
+                output.innerText = "This link is a .mov domain";
+                output.classList.add("red");
+                output.classList.remove("green");
+            } else if (domain.includes("@")) {
+                output.innerText = "This link contains user info";
+                output.classList.add("red");
+                output.classList.remove("green");
+            } else if (domain.includes("⁄")) {
+                output.innerText = "This link contains U+2044 (⁄)";
+                output.classList.add("red");
+                output.classList.remove("green");
+            } else if (domain.includes("∕")) {
+                output.innerText = "This link contains U+2215 (∕)";
+                output.classList.add("red");
+                output.classList.remove("green");
             } else {
                 output.innerText = "This link came from " + domain;
                 output.classList.add("green");
